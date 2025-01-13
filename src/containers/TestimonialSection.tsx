@@ -13,6 +13,7 @@ const TestimonialSection = () => {
       <div className="relative mt-20 grid grid-cols-3 gap-6 px-5">
         <Carousel
           opts={{
+            loop: true,
             align: 'start',
           }}
           plugins={[AutoScroll({ speed: 0.3 })]}
@@ -60,9 +61,11 @@ const TestimonialSection = () => {
         </Carousel>
         <Carousel
           opts={{
-            align: 'start',
+            loop: true,
+            align: 'end',
+            startIndex: 2,
           }}
-          plugins={[AutoScroll({ speed: 0.3, startDelay: 2500 })]}
+          plugins={[AutoScroll({ speed: 0.3 })]}
           orientation="vertical"
         >
           <CarouselContent className="h-[700px]">

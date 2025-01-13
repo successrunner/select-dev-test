@@ -2,20 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FFFFFF;
+    --foreground: #0A0A0B;
+    --card: #FFFFFF;
+    --card-foreground: #0A0A0B;
+    --popover: #FFFFFF;
+    --popover-foreground: #0A0A0B;
+    --primary: #191919;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F4F4F5;
+    --secondary-foreground: #191919;
+    --muted: #F4F4F5;
+    --muted-foreground: #757575;
+    --accent: #F4F4F5;
+    --accent-foreground: #191919;
+    --destructive: #E11D48;
+    --destructive-foreground: #FAFAFA;
+    --border: #E5E5E6;
+    --input: #E5E5E6;
+    --ring: #0A0A0B;
+    --chart-1: #E86C45;
+    --chart-2: #2B8F8C;
+    --chart-3: #2C4147;
+    --chart-4: #D9B341;
+    --chart-5: #E87339;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: #0A0A0B;
+    --foreground: #FAFAFA;
+    --card: #0A0A0B;
+    --card-foreground: #FAFAFA;
+    --popover: #0A0A0B;
+    --popover-foreground: #FAFAFA;
+    --primary: #FAFAFA;
+    --primary-foreground: #191919;
+    --secondary: #27272A;
+    --secondary-foreground: #FAFAFA;
+    --muted: #27272A;
+    --muted-foreground: #A3A3A6;
+    --accent: #27272A;
+    --accent-foreground: #FAFAFA;
+    --destructive: #7F1D1D;
+    --destructive-foreground: #FAFAFA;
+    --border: #27272A;
+    --input: #27272A;
+    --ring: #D4D4D8;
+    --chart-1: #1E62CC;
+    --chart-2: #2D8A6D;
+    --chart-3: #D67E22;
+    --chart-4: #8B3BBF;
+    --chart-5: #CC2E6D;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

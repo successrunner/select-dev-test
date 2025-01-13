@@ -4,37 +4,37 @@ export const NAVBAR_MENU_ITEMS = [
     links: [
       {
         label: 'Feature 1',
-        href: '/features/1',
+        href: '/',
       },
       {
         label: 'Feature 2',
-        href: '/features/2',
+        href: '/',
       },
       {
         label: 'Feature 3',
-        href: '/features/3',
+        href: '/',
       },
     ],
   },
   {
     label: 'Pricing',
-    href: '/pricing',
+    href: '/',
   },
   {
     label: 'Resources',
     links: [
       {
         label: 'Blog',
-        href: '/blog',
+        href: '/',
       },
       {
         label: 'Docs',
-        href: '/docs',
+        href: '/',
       },
     ],
   },
   {
     label: 'About',
-    href: '/about',
+    href: '/',
   },
 ];

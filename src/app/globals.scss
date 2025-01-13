@@ -35,32 +35,6 @@ body {
     --chart-5: #e87339;
     --radius: 0.5rem;
   }
-  .dark {
-    --background: #0a0a0b;
-    --foreground: #fafafa;
-    --card: #0a0a0b;
-    --card-foreground: #fafafa;
-    --popover: #0a0a0b;
-    --popover-foreground: #fafafa;
-    --primary: #fafafa;
-    --primary-foreground: #191919;
-    --secondary: #27272a;
-    --secondary-foreground: #fafafa;
-    --muted: #27272a;
-    --muted-foreground: #a3a3a6;
-    --accent: #27272a;
-    --accent-foreground: #fafafa;
-    --destructive: #7f1d1d;
-    --destructive-foreground: #fafafa;
-    --border: #27272a;
-    --input: #27272a;
-    --ring: #d4d4d8;
-    --chart-1: #1e62cc;
-    --chart-2: #2d8a6d;
-    --chart-3: #d67e22;
-    --chart-4: #8b3bbf;
-    --chart-5: #cc2e6d;
-  }
 }
 
 @layer base {
@@ -69,5 +43,28 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+
+    h1 {
+      @apply text-[64px] font-medium;
+    }
+  }
+}
+
+@layer base {
+  @property --a {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .animated-border {
+    animation: a 2s linear infinite;
+    background: repeating-conic-gradient(from var(--a, 0deg), #0000 0% 70%, var(--primary)) border-box;
+  }
+
+  @keyframes a {
+    to {
+      --a: 1turn;
+    }
   }
 }

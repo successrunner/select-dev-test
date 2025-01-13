@@ -4,7 +4,7 @@ import NavbarMenu from './menu';
 
 const Navbar = () => {
   return (
-    <header className="mx-[84px] mt-4 flex items-center justify-between rounded-[14px] border border-border-navbar px-4 py-3">
+    <header className="mx-[84px] mt-4 flex items-center justify-between rounded-[14px] border border-border-navbar px-4 py-3 backdrop-blur-lg">
       <Logo />
       <NavbarMenu />
       <div className="flex items-center gap-5">

@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        robotoMono: ['var(--font-roboto-mono)', 'monospace'],
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -43,6 +47,7 @@ export default {
         border: {
           DEFAULT: 'var(--border)',
           navbar: 'var(--border-navbar)',
+          testimonial: 'var(--border-testimonial)',
         },
         input: 'var(--input)',
         ring: 'var(--ring)',
@@ -53,6 +58,9 @@ export default {
           '4': 'var(--chart-4)',
           '5': 'var(--chart-5)',
         },
+
+        // additional colors
+        subheading: 'var(--subheading)',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -61,6 +69,7 @@ export default {
       },
       boxShadow: {
         button: '1px 1px 0px 0px #FFFFFF4D inset,0px 1px 0px 0px #0085C0,0px 2px 8px 0px #00000029',
+        testimonial: '0px 0px 10px 0px #000000B2, 0px 0px 0px 1px #000000',
       },
     },
   },

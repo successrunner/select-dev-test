@@ -41,7 +41,10 @@ export default {
           DEFAULT: 'var(--destructive)',
           foreground: 'var(--destructive-foreground)',
         },
-        border: 'var(--border)',
+        border: {
+          DEFAULT: 'var(--border)',
+          navbar: 'var(--border-navbar)',
+        },
         input: 'var(--input)',
         ring: 'var(--ring)',
         chart: {
@@ -56,6 +59,9 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      boxShadow: {
+        button: '1px 1px 0px 0px #FFFFFF4D inset,0px 1px 0px 0px #0085C0,0px 2px 8px 0px #00000029',
       },
     },
   },

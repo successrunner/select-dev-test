@@ -8,13 +8,13 @@ body {
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #0a0a0b;
+    --background: #0b0c14;
+    --foreground: #ffffff;
     --card: #ffffff;
     --card-foreground: #0a0a0b;
     --popover: #ffffff;
     --popover-foreground: #0a0a0b;
-    --primary: #191919;
+    --primary: #0ca6e9;
     --primary-foreground: #fafafa;
     --secondary: #f4f4f5;
     --secondary-foreground: #191919;
@@ -25,6 +25,7 @@ body {
     --destructive: #e11d48;
     --destructive-foreground: #fafafa;
     --border: #e5e5e6;
+    --border-navbar: #2f3440cc;
     --input: #e5e5e6;
     --ring: #0a0a0b;
     --chart-1: #e86c45;

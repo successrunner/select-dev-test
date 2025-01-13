@@ -1,5 +1,6 @@
-import { Button } from '../ui/button';
 import Logo from '@/assets/icons/logo.svg';
+
+import { Button } from '../ui/button';
 import NavbarMenu from './menu';
 
 const Navbar = () => {

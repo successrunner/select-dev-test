@@ -1,9 +1,10 @@
-import AnimatedBanner from '@/components/AnimatedBanner';
-import { Button } from '@/components/ui/button';
-import Stars from '@/assets/icons/stars.svg';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+
+import Stars from '@/assets/icons/stars.svg';
 import HeroImage from '@/assets/images/hero.png';
+import AnimatedBanner from '@/components/AnimatedBanner';
+import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (

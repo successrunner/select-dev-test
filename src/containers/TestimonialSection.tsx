@@ -1,8 +1,9 @@
 'use client';
 
+import AutoScroll from 'embla-carousel-auto-scroll';
+
 import TestimonialCard from '@/components/TestimonialCard';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import AutoScroll from 'embla-carousel-auto-scroll';
 
 const TestimonialSection = () => {
   return (
@@ -61,7 +62,7 @@ const TestimonialSection = () => {
           opts={{
             align: 'start',
           }}
-          plugins={[AutoScroll({ speed: 0.3, startDelay: 1000 })]}
+          plugins={[AutoScroll({ speed: 0.3, startDelay: 2500 })]}
           orientation="vertical"
         >
           <CarouselContent className="h-[700px]">
